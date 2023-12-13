@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1R0r4Z8B3jbZaLtZyZnh_ySv4V7HpuyHFwEdMNHo5e93M1a-uCaHluqh0VO64nq4Fmpo&usqp=CAU");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.sanduiche-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* Adiciona regras de estilo para organizar as divs lado a lado */
+.sanduiche-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sanduiche-subsection {
+    width: 30%; /* Ajuste a largura conforme necessário */
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+/* Adiciona borda à div dados do cliente */
+#dados-cliente {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="tel"]{
+	width: 40%;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+	display: inline-block;
+}
+
+#endereco {
+    width: 80%;
+    padding: 8px; /* Ajuste conforme necessário */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+	display: inline-block;
+}
+
+
+select,
+button {
+    width: 80%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+	display: inline-block;
+}
+
+/* Ajustes para os selects de Tipo de Pão, Tipo de Carne e Tipo de Queijo */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+	display: inline-block;
+}
+
+/* Adiciona regras de estilo para organizar os selects lado a lado */
+.sanduiche-subsection select {
+    margin-bottom: 0;
+}
+
+/* Adiciona regras de estilo para organizar os radios lado a lado */
+.radio-group select,
+.radio-group input[type="radio"] {
+    margin-top: 0;
+    font-size: 14px; 
+}
+
+#rodape {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    font-size: 12px;
+	border-radius:10px;
+}
+marquee {
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}

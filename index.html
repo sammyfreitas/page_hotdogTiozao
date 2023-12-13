@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Dog do Tiozão</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sanduiche-container">
+			<h2>Hot Dog do Tiozão</h2>
+			<marquee behavior="scroll" direction="left" style="margin-top: 20px;">Temos Delivery! Funcionamos de 19h às 00h - Sextas, Sábados, Domingos e Feriados</marquee>
+            <div id="dados-cliente" class="section">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="xx - xxxxx-xxxx" pattern="\d{2} - \d{5}-\d{4}">
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Seu endereço">
+            </div>
+            <br>
+            <div class="sanduiche-section">
+                <div id="tipo-pao" class="sanduiche-subsection">
+                    <label for="pao">Escolha o tipo de pão:</label>
+                    <select id="pao" name="pao">
+                        <option value="frances">Francês</option>
+                        <option value="hotdog">Hot Dog</option>
+                        <option value="suico">Suíço</option>
+                    </select>
+                </div>
+				
+				<div id="tipo-pao" class="sanduiche-subsection">
+	                <label for="carne">Escolha o Recheio</label>
+					<select id="carne" name="carne" required>
+						<option value="linguica">Linguiça Defumada</option>
+						<option value="linguica_mineira">Linguiça Mineira</option>
+						<option value="salsicha">Salsicha</option>
+						<option value="salsicha_frango">Salsicha de Frango</option>
+					</select>
+				</div>
+                
+                <div id="tipo-bebida" class="sanduiche-subsection">
+                    <label for="bebida">Escolha a bebida:</label>
+                    <select id="bebida" name="bebida">
+                        <option value=" cocacola">Coca-Cola</option>
+                        <option value="guaravita">Guaravita</option>
+                        <option value="H2O">H2O Limoneto</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="sanduiche-section">
+                <div id="saladas" class="sanduiche-subsection">
+                    <label>Escolha as saladas:</label>
+                    <div>
+                        <input type="checkbox" id="tomate" name="salada" value="tomate">
+                        <label for="tomate">Tomate</label>
+  
+                        <input type="checkbox" id="cebola" name="salada" value="cebola">
+                        <label for="cebola">Cebola</label>
+						
+						<input type="checkbox" id="pimentao" name="salada" value="pimentao">
+                        <label for="pimentao">Pimentão</label>
+						
+						<input type="checkbox" id="milho" name="salada" value="milho">
+                        <label for="milho">Milho&nbsp&nbsp&nbsp&nbsp</label>
+						
+						<input type="checkbox" id="ervilha" name="salada" value="ervilha">
+                        <label for="ervilha">Ervilha</label>
+						
+						<input type="checkbox" id="ovocodorna" name="salada" value="ovocodorna">
+                        <label for="ovocodorna">Ovo de Codorna</label>
+						
+						<input type="checkbox" id="passas" name="salada" value="passas">
+                        <label for="passas">Passas</label>
+							
+						<input type="checkbox" id="azeitona" name="salada" value="azeitona">
+                        <label for="azeitona">Azeitona</label>
+						
+						<input type="checkbox" id="queijoparmesao" name="salada" value="queijoparmesao">
+                        <label for="queijoparmesao">Queijo Parmesão</label>
+						
+						<input type="checkbox" id="batatapalha" name="salada" value="batatapalha">
+                        <label for="batatapalha">Batata Palha</label>
+
+                        
+                    </div>
+                </div>
+                
+                <div id="molhos" class="sanduiche-subsection">
+                    <label>Escolha o molho:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="barbecue" name="molho" value="barbecue">
+                        <label for="barbecue">Barbecue</label>
+						
+						<input type="radio" id="maionese" name="molho" value="maionese">
+                        <label for="maionese">Maionese&nbsp&nbsp&nbsp&nbsp</label>
+
+                        <input type="radio" id="catupiry" name="molho" value="catupiry">
+                        <label for="catupiry">Catupiry</label>
+						
+						<input type="radio" id="bilyjack" name="molho" value="bilyjack">
+                        <label for="bilyjack">Billy Jack</label>
+						
+                        <input type="radio" id="mostarda" name="molho" value="mostarda">
+                        <label for="mostarda">Mostarda</label>
+
+                        <input type="radio" id="parmesao" name="molho" value="parmesao">
+                        <label for="parmesao">Parmesão</label>
+                    </div>
+                </div>
+            </div>
+            
+            <button onclick="enviarPedido()">Enviar Pedido</button>
+        </div>
+		<div id="rodape">
+			<p>Contato WhatsApp: <a href="https://wa.me/+5521967300883" target="_blank">21 96730-0883</a></p>
+			<p>Endereço: Rua Henrique Scheid, 596 - Engenho de Dentro</p>
+		</div>
+    </div>
+		
+</div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
